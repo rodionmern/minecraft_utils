@@ -4,7 +4,6 @@ import "./Nether.css"
 
 import Kopeechka from "../../ui/Kopeechka/Kopeechka"
 import Select from "../../ui/Select/Select"
-import Frame from "../../ui/Frame/Frame"
 import Button from "../../ui/Button/Button"
 import Input from "../../ui/Input/Input"
 

@@ -1,5 +1,3 @@
-import { useState } from "react"
-
 import "./End.css"
 
 import Kopeechka from "../../ui/Kopeechka/Kopeechka"
