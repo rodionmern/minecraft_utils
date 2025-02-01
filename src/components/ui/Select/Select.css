@@ -1,0 +1,19 @@
+.ui-select {
+    background-color: #d0d1d5;
+
+    width: 365px;
+
+    font-family: Minecraft;
+    font-size: 24px;
+
+    margin: 5px;
+    padding: 15px;
+
+    border: none;
+    /* border-bottom: 5px solid #575759; */
+    outline: 4px solid #000000;
+}
+
+.ui-select:hover {
+    cursor: context-menu;
+}

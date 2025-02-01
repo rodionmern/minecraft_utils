@@ -1,0 +1,23 @@
+.ui-frame {
+    text-align: center;
+
+    background-color: #d0d1d5;
+
+    font-family: Minecraft;
+    font-size: 24px;
+
+    margin: 5px;
+    padding: 5px;
+
+    border: none;
+    outline: 4px solid #000000;
+}
+
+.ui-frame:hover {
+    cursor: pointer;
+}
+
+.frame-image {
+    height: 125px;
+    width: 125px;
+}

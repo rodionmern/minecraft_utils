@@ -1,0 +1,19 @@
+.dsa {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+    height: auto;
+    width: 100%;
+}
+
+.neprid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* height: 300px; */
+    width: 100%;
+}
