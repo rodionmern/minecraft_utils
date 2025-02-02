@@ -1,4 +1,4 @@
-.nepridymal {
+.utils {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -7,7 +7,7 @@
     width: 100%;
 }
 
-.neprid {
+.section {
     display: flex;
     justify-content: center;
     align-items: center;

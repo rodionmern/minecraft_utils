@@ -2,7 +2,6 @@ import { useState } from "react"
 
 import "./Nether.css"
 
-import Kopeechka from "../../ui/Kopeechka/Kopeechka"
 import Select from "../../ui/Select/Select"
 import Button from "../../ui/Button/Button"
 import Input from "../../ui/Input/Input"
@@ -25,7 +24,6 @@ const Nether = ( {  } ) => {
 
     const selectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         setSelectValue(event.target.value);
-        alert(event.target.value)
     };
 
     const fingCoordinates = () => {
@@ -41,9 +39,9 @@ const Nether = ( {  } ) => {
     }
 
     return (
-        <Kopeechka>
+        <>
             <h1>Nether coordinates</h1>
-            <div className="dsa">
+            <div className="nether-container">
                 <Select name="nether" onChange={selectChange}>
                     <option value="1">Nether:Overworld</option>
                     <option value="2">Overworld:Nether</option>
@@ -54,8 +52,7 @@ const Nether = ( {  } ) => {
                     <Button><a onClick={fingCoordinates}>Find</a></Button>
                 </div>
             </div>
-        </Kopeechka>
-
+        </>
     )
 }
 
