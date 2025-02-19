@@ -2,6 +2,7 @@ import { useState } from "react"
 
 import "./Nether.css"
 
+import Text from "../../ui/Text/Text"
 import Select from "../../ui/Select/Select"
 import Button from "../../ui/Button/Button"
 import Input from "../../ui/Input/Input"
@@ -11,8 +12,8 @@ const Nether = ( {  } ) => {
     const [x, setX] = useState('')
     const [z, setZ] = useState('')
 
-    var xResult = 'Ящики'
-    var zResult = 'Бука'
+    const [xResult, setXResult] = useState('?')
+    const [zResult, setZResult] = useState('?')
 
     const xChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setX(event.target.value);
@@ -28,13 +29,11 @@ const Nether = ( {  } ) => {
 
     const fingCoordinates = () => {
         if (selectValue == "1") {
-            xResult = (Number(x) * 8).toString()
-            zResult = (Number(z) * 8).toString()
-            alert(`${xResult} ${zResult}`)
+            setXResult((Number(x) * 8).toString())
+            setZResult((Number(z) * 8).toString())
         } else {
-            xResult = (Number(x) / 8).toString()
-            zResult = (Number(z) / 8).toString()
-            alert(`${xResult} ${zResult}`)
+            setXResult((Number(x) / 8).toString())
+            setZResult((Number(z) / 8).toString())
         }
     }
 
@@ -51,6 +50,7 @@ const Nether = ( {  } ) => {
                     <Input placeholder="Z" value={z} onChange={zChange}></Input>
                     <Button><a onClick={fingCoordinates}>Find</a></Button>
                 </div>
+                <Text>{xResult} ~ {zResult}</Text>
             </div>
         </>
     )
