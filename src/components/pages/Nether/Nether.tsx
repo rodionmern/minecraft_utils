@@ -50,7 +50,7 @@ const Nether = ( {  } ) => {
                     <Input placeholder="Z" value={z} onChange={zChange}></Input>
                     <Button><a onClick={fingCoordinates}>Find</a></Button>
                 </div>
-                <Text>{xResult} ~ {zResult}</Text>
+                <Text>x: {xResult} y: ~ z: {zResult}</Text>
             </div>
         </>
     )
